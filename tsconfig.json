@@ -1,0 +1,23 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noEmitOnError": true,
+        "noImplicitAny": true,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        //"sourceRoot": "src",
+        "outDir": "bld",
+        "declaration": true 
+    },
+    "files": [
+        "src/NuimoMQTTClient.ts",
+        "src/HueClient.ts",
+        "src/Settings.ts",
+        "src/SetupHue.ts",
+        "src/main.ts",
+        "typings/main.d.ts"
+    ]
+}
