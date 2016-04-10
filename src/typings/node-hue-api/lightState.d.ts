@@ -2,7 +2,7 @@
 
 declare module "node-hue-api" {
     
-    export module lightState {
+    namespace lightState {
 
         class State {
             payload(): Object;

@@ -16,7 +16,7 @@ export function setupInitialConfig(): void {
             username: ""
         },
         mqtt: {
-            host: "ws://broker.mqttdashboard.com:8000"
+            host: "ws://broker.hivemq.com:8000"
         }
     };
     jsonfile.writeFileSync(configurationFile, emptyConfig);

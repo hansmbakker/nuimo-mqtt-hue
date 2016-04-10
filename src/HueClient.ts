@@ -29,11 +29,11 @@ export default class HueClient extends NuimoMQTTClient {
                 console.log("leftright");
                 this.brightnessIncreaseAll(event.value);
 
-                this.sendProgressBarIcon(nuimoUuid, 0.5, NuimoProgressBarStyle.VolumeBar, 0.5); // TODO get actual value
+                this.sendProgressBarIcon(nuimoUuid, 0.5, NuimoProgressBarStyle.VolumeBar, 1, 0.5); // TODO get actual value
                 break;
             case NuimoGesture.ButtonPress:
                 this.allOff();
-                this.sendNamedIcon(nuimoUuid, "powerOff", 0.5);
+                this.sendNamedIcon(nuimoUuid, "powerOff", 1, 0.5);
                 break;
             default:
                 break;
